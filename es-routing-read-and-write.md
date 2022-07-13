@@ -28,6 +28,20 @@
 
 -> parallely sent to replicas 
 
+>Replication failure
 
+Example -> there are 3 nodes in 1 Replciation group
+
+-> if failed to write on 1 of the secondary
+and primary went down 
+
+-> now 2 shard -> 1 has copy , 2nd doesnt 
+
+how ES resolves ?
+
+- Primary terms & sequence numbers  
+- Global and local checkpoints 
+
+---
 
 

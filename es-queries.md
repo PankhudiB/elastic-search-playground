@@ -57,6 +57,13 @@ and even update without knowing the current value of field
 
 we can upsert, delete , replace similarly
 
+deleteby , updateBy 
+
+--
+
+Bulk API
+
+-> expects data format in `ndjson`
 
 
 
