@@ -56,7 +56,7 @@ Overview of Datatypes :
 - float
 - double
 - short
-- date
+- date -> epoch
 - ip
 - etc..
 
@@ -119,8 +119,19 @@ GET /reviews/_mapping/filed/
 - used for exact matching
 - used for filtering,aggregating, sorting
 - how does it work & why cant we use it for full text searches ?
-  - 
-
+- We can use `text` field for `full text searches` but we cant run aggregations on text field
+  - so `keyword` for mapping for `aggregations` ..
+- we can attach both to field -> usecase of `multi-field mapping` : 
+  - Recipe : {
+      description -> text
+      ingredients [] --> text + keyword
+  }
+  - here :
+    - `text` field type for ingredients will be useful when :
+      - -> we are `searching for recipes that need an ingredient` -> eg garlic and the match of spelling might nod be perfect
+    - `keyword` field type for ingredients will be useful when :
+      - we want to `show ingredients -> recipe mapping`  
+-------
 
 
 
