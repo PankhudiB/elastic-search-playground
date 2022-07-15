@@ -28,6 +28,10 @@ Terms            ------------------------->   Documents that contain those terms
 
 -> uninverted inverted index
 
+->  on-disk data structure, built at document index time
+
+-> They store the same values as the _source but in a column-oriented fashion that is way more efficient for sorting and aggregations
+
 -> disable doc_values -> if not aggre,sorting,scripting 
 
 ---------

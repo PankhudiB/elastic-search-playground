@@ -1,4 +1,4 @@
-#### ES improvements
+### ES improvements
 
 1. the data-types of fields and are they necessary ? 
    1. keyword
@@ -12,5 +12,12 @@
    1. not just dynamic : false but dynamic : strict
 5. Set doc_values to false if you don't need sorting, aggr & scripting
 6. Does while query through grafana - which context are we using ?
-8. While doing the search Check if we need query context or filter context ?
+7. While doing the search Check if we need query context or filter context ?
    1. i.e whether do we really want to calculate relevance scores -> bcoz that takes time
+8. Which Analyser are we using ?
+
+
+
+### ES - doubts
+
+1. How does `search-as-you-type` work ?
