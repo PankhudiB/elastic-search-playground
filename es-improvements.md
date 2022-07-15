@@ -11,4 +11,6 @@
 4. Fix Mapping to save storage space :
    1. not just dynamic : false but dynamic : strict
 5. Set doc_values to false if you don't need sorting, aggr & scripting
-6. 
+6. Does while query through grafana - which context are we using ?
+8. While doing the search Check if we need query context or filter context ?
+   1. i.e whether do we really want to calculate relevance scores -> bcoz that takes time
