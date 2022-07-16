@@ -15,6 +15,8 @@
 7. While doing the search Check if we need query context or filter context ?
    1. i.e whether do we really want to calculate relevance scores -> bcoz that takes time
 8. Which Analyser are we using ?
+9. Grafana dashboards -> _source filtering --> to reduce the amount of data we receive and n/w throttling
+
 
 
 
