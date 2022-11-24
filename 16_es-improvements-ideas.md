@@ -5,7 +5,7 @@
    2. text 
 2. And can we change this mapping post creation of index ?
 3. time series data -> 
-   1. we want to filter by specific time value
+   1. we dont want to filter by specific time value
    2. but rather aggregate by time intervals
    3. another optimization with time series field -> disable norms -> if relevance scoring is not needed
 4. Fix Mapping to save storage space :
@@ -16,8 +16,9 @@
    1. i.e whether do we really want to calculate relevance scores -> bcoz that takes time
 8. Which Analyser are we using ?
 9. Grafana dashboards -> _source filtering --> to reduce the amount of data we receive and n/w throttling
-
-
+10. Need a Dashboard to show ES query time
+11. There is a Profiler in Kibana -> use that to profile grafana queries
+12. 
 
 
 ### ES - doubts

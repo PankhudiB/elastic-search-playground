@@ -1,12 +1,16 @@
 
 ### Relevance Score
 
+index --> 
+    multiple docs
+
 OLD algo
 
 1. TF - Term Frequency 
    1. how many times a term appear in the field for the doc
    2. more times the term occurs -> the more relevant the doc is
    
+The
 
 2. Inverse Document Frequency
    1. How often the term appear in the index (i.e across all docs)
@@ -15,11 +19,20 @@ OLD algo
 
 
 3. Field length norm
-   1. longer the field -> less likely the word in the field is relvant
+   1. longer the field -> less likely the word in the field is relevant
    2. eg: title salad in 50 chars is more relevant than in 50000 chars description
 
+> DEMO
+
+Term frequency : 
+GET /index/_termvectors/id?fields=field
+
+https://www.elastic.co/guide/en/elasticsearch/reference/7.17/docs-termvectors.html
+
+---------
 Comparison with BM25 Algo
 
+- default
 - Better at handling stop words
   - not necessarily you always want to remove the stop words 
   - and if you didnt -> then there are chances their relevance score may be boosted
@@ -28,4 +41,4 @@ Comparison with BM25 Algo
     - eg. boost for term that appears 1000 times wil be equal to term that appears 30 times.
   
 - Improves field-length norms
-  - PM25 considers each field separate -> takes avg of field length 
+  - BM25 considers each field separate -> takes avg of field length 

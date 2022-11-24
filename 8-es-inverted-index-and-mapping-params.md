@@ -18,6 +18,8 @@ Terms            ------------------------->   Documents that contain those terms
 
 - if the doc has 2 text fields then --> 2 Inverted indices -> `1 per text field`
 
+- Inverted index are maintained on disc
+
 - Other datatype -> like numeric,geospatial --> stored in `BKD trees`
 
 ---------
@@ -58,6 +60,7 @@ can be disabled for fields:
         }
     }
 
-
-
+text -> inverted_index -> analysed -> relevance scoring
+keyword -> exact matches -> not analysed
+doc_values -> separate column for the field -> not allowed for text
 

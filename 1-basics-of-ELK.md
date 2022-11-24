@@ -3,15 +3,26 @@
 #### July 12th 2022
 
 - Full text search engine
+- spell checking or “did you mean?” responses
+- auto completion & search as you type
 - query structured data
 - analyse app logs / system metrics
 - anomaly detection
 - alerting
 ---------------------
+
+ES vs Lucene ?
+
+Lucene or Apache Lucene is an open-source Java library used as a search engine
+Es is built over Lucene and provides a JSON based REST API to refer to Lucene features.
+
 #### Written in JAVA and built on Apache Lucene
+
 ---------------------
 
 #### Elastic Stack
+
+ELK 
 
 - Kibana -> Web interface for ES & for visualisation & dashboards
 - Logstash -> process logs from app and send to ES + Data processor pipeline
